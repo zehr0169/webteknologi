@@ -1,0 +1,399 @@
+/* Baggrund og skrifttype */
+body {
+    background-color: #f3f0ff;
+    font-family: 'Arial', sans-serif; /* Ren og moderne skrifttype */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #6c63ff;
+    color: white;
+    padding: 20px;
+    font-size: 2.5rem;
+}
+
+
+/* Container til titlen */
+.title-container {
+    text-align: center;
+    margin: 20px 0; /* Plads over og under titlen */
+}
+
+/* Hovedtitel */
+.main-title {
+    font-size: 3rem; /* Størrelse på teksten */
+    color: #6c63ff; /* Primær farve */
+    font-family: 'Poppins', sans-serif; /* Elegant skrifttype */
+    background: linear-gradient(90deg, #6c63ff, #8d88e4, #ff8e8e);
+    -webkit-background-clip: text; /* Gradient effekt kun på tekst */
+    background-clip: none;
+    color: transparent; /* Skjuler baggrunden for at vise gradienten */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtil skygge */
+    margin: 0 auto;
+}
+
+/* Animation ved hover */
+.main-title:hover {
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05); /* Lidt større ved hover */
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+/* Container for billede og informationsboks */
+.image-info-container {
+    display: flex; /* Placer elementerne ved siden af hinanden */
+    align-items: stretch; /* Sørg for, at de har samme højde */
+    gap: 20px; /* Afstand mellem billedet og boksen */
+    margin: 20px auto; /* Centrer containeren på siden */
+    max-width: 1000px; /* Maksimal bredde for containeren */
+}
+
+/* Singapore-billedet */
+.main-image {
+    width: 60%; /* Billedet fylder 60% af containeren */
+    height: auto; /* Bevar billedets proportioner */
+    object-fit: cover; /* Beskær billedet, hvis nødvendigt */
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Informationsboks */
+.info-box {
+    flex: 1; /* Fyld resten af pladsen i containeren */
+    background-color: linear-gradient(135deg, #f8f9fa, #e3f2fd);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    border: 2px solid #6c63ff;
+}
+
+
+/* Flag og tekst i informationsboks */
+.info-flag {
+    width: 60px;
+    height: auto;
+    margin: 0 auto 15px;
+    display: block;
+
+}
+
+.info-box h2 {
+    font-size: 1.8rem;
+    color: #3d3d3d;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Arial Black', sans-serif;
+}
+
+.info-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.8;
+    font-size: 1rem;
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Listepunkter med ikon */
+.info-box ul li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 25px; /* Plads til ikon */
+}
+
+/* Ikon foran listepunkter */
+.info-box ul li::before {
+    content: "✓"; /* Ikonet kan ændres */
+    position: absolute;
+    left: 0;
+    color: #6c63ff; /* Samme farve som kant */
+    font-size: 1.2rem;
+}
+
+/* Hover-effekt */
+.info-box:hover {
+    background: linear-gradient(135deg, #e3f2fd, #f1f8e9); /* Lysere gradient */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02); /* Lidt større på hover */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Link-bokse (de 6 sektioner med fx 'Where to Eat', 'Sightseeing' osv.) */
+.links {
+    display: flex; /* Brug flexbox for at arrangere felterne i en række */
+    flex-wrap: wrap; /* Sørg for at felterne kan brydes til næste linje */
+    justify-content: space-around; /* Fordel pladsen mellem felterne */
+    margin-top: 30px; /* Margin over links sektionen */
+    font-size: 60px;
+    padding: 20px;
+    gap: 30px;
+}
+
+/* Styling af hver boks */
+.link-box {
+    background-color: #ffffff; /* Baggrundsfarve */
+    color: #6c63ff; /* Tekstfarve */
+    padding: 30px; /* Indvendig afstand */
+    margin: 10px; /* Margin mellem felterne */
+    flex: 1 1 300px; /* Flex-effekt for at få felterne til at fylde pladsen */
+    height: 150 px;
+    width: 250px;
+    text-align: center; /* Centrer tekst */
+    border-radius: 12px; /* Runde hjørner */
+    text-decoration: none; /* Fjern understregning */
+    transition: transform 0.3s, background-color 0.3s; /* Overgangseffekt på hover */
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    font-size: 1.2rem;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease-in-out;  /* Glidende overgang */
+    cursor: pointer; /* Vis at boksen er klikbar */
+}
+
+/* Hover-effekt til boksene */
+.link-box:hover {
+    background-color: #6c63ff; /* Mørkere farve ved hover */
+    color: white; /* Hvid tekst på hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Øget skyggeeffekt */
+    transform: translateY(-5px); /* Løft effekt */
+}
+
+/* Småskrift i boksene */
+.link-box p {
+    font-size: 1rem;
+    margin-top: 15px;
+    color: #555;
+}
+
+/* Responsive design: Justering for mindre skærme */
+@media (max-width: 768px) {
+    .image-info-container {
+        flex-direction: column; /* Gør layoutet vertikalt */
+        align-items: center; /* Centrer elementerne */
+      gap: 20px; /* Juster afstanden mellem billeder og informationsboks */
+    }
+
+.main-image {
+    width: 100%; /* Gør billedet bredt på små skærme */
+    height: auto;
+    object-fit: cover;
+}
+
+.info-box {
+    width: 90%; /* Gør informationsboksen bred på små skærme */
+    padding: 15px; /* Mindre polstring på små skærme */
+
+}
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-size: 0.9rem;
+
+
+}
+
+
+/* Restaurant boksene */
+.restaurant {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    max-width: 800px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.restaurant h2 {
+    font-size: 2rem;
+    color: #6c63ff;
+    margin-bottom: 10px;
+}
+
+.restaurant .address {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.restaurant-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+
+/* Knapper for yderligere information */
+.learn-more {
+    display: inline-block;
+    background-color: #6c63ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+    background-color: #4a3cbf;
+}
+
+
+/* Stil for "Where to Eat" titlen */
+.page-title {
+    text-align: center;
+    font-family: 'Cursive', sans-serif;  /* Smuk skrifttype */
+    font-size: 4rem;  /* Større tekst */
+    margin-top: 40px;  /* Mere luft omkring titlen */
+    color: #6c63ff;  /* Lilla farve for elegance */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);  /* Let skygge for dybde */
+    padding: 20px;
+    background: linear-gradient(45deg, #6c63ff, #3a3a93);  /* Farveovergang */
+    -webkit-background-clip: text; /* Kun tekst får baggrundsfarve */
+   background-clip: none;
+    color: transparent; /* Gør selve tekstfarven gennemsigtig for baggrundsfarveeffekt */
+    border-radius: 10px;  /* Rundede hjørner */
+    transition: all 0.3s ease; /* Animation på hover */
+}
+
+/* Hover-effekt på titel */
+.page-title:hover {
+    color: #fff;  /* Når man holder musen over, bliver farven hvid */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);  /* Skarpere skygge */
+    transform: scale(1.05);  /* Let zoom-effekt */
+}
+
+
+
+
+/* Overordnet styling for transport-sektionen */
+.transport {
+    background-color: #f5f5f5;  /* Lys grå baggrund */
+    padding: 40px 20px;  /* Plads omkring indholdet */
+    text-align: center;  /* Centrerer teksten */
+    border-radius: 10px;  /* Runde hjørner */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Skaber en let skygge */
+    margin: 30px 0;  /* Margin omkring sektionen */
+}
+
+.transport h2 {
+    font-size: 2.5rem;
+    color: #6c63ff;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.map-container iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.transport-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  /* Responsiv grid-layout */
+    gap: 20px;  /* Mellemrum mellem bokse */
+    margin-top: 40px;
+}
+
+.transport-option {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.transport-option h4 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.transport-option p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Hover-effekt på transportmuligheder */
+.transport-option:hover {
+    transform: translateY(-5px);  /* Løft effekt */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+
+}
+
+
+/* Styling af hyperlinks */
+a {
+    color: #1a73e8;  /* Blå farve for hyperlinks */
+    text-decoration: none;  /* Fjern understregning */
+}
+
+a:hover {
+    text-decoration: underline;  /* Understregning ved hover */
+    color: #1565c0;  /* Mørkere blå farve ved hover */
+}
+
+/* Styling af transportoptioner */
+.transport-option p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.transport-option p a {
+    font-weight: bold;  /* Gør links fed */
+}
+
+
+
+
+/* Styling af Templer */
+
+.container {
+    display: flex;
+    justify-content: space-around; /* Placerer elementerne med plads imellem */
+    align-items: left; /* Centrerer dem lodret */
+    padding: 20px;
+}
+.item {
+    max-width: 45%; /* Gør, at elementerne ikke fylder hele bredden */
+}
+img, video {
+    width: 100%; /* Gør billeder og videoer responsive */
+    height: auto; /* Bevarer forholdet */
+}
+h1 {
+    text-align: center; /* Centers the text horizontally */
+    margin-top: 20px; /* Adds some space above the title */
+}
+
