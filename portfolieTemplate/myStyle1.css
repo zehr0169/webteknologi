@@ -1,0 +1,86 @@
+/* Tilføj moderne font fra Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+    color: #333;
+    
+}
+
+img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+
+/* Navigationsbar */
+nav {
+    background-color: #006064;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 20px;
+    color: #004d40;
+}
+
+/* Sektioner */
+section {
+    background-color: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Overskrifter */
+h2 {
+    color: #006064;
+    border-left: 5px solid #00bcd4;
+    padding-left: 10px;
+}
+
+h3 {
+    color: #00796b;
+}
+
+/* Liste og tekst */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 0.9em;
+    background-color: #eeeeee;
+    border-top: 1px solid #ccc;
+}
+
+

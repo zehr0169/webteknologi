@@ -1,0 +1,82 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500;700&display=swap');
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(to right, #f2f2f2, #ffffff);
+    color: #333;
+}
+
+
+/* Navigation */
+nav {
+    background-color: #263238;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    color: #80deea;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header h1 {
+    font-size: 2.8em;
+    text-align: center;
+    color: #00695c;
+    margin-top: 20px;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Headings */
+h2 {
+    color: #00796b;
+    border-left: 5px solid #4db6ac;
+    padding-left: 10px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Code block */
+pre {
+    background-color: #eceff1;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: monospace;
+    color: #37474f;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    background-color: #eeeeee;
+    border-top: 1px solid #ccc;
+    margin-top: 30px;
+}
